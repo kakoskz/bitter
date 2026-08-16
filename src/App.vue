@@ -1,7 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import hijo from './components/hijo.vue'
+
+console.log('EL Hijo Me Aviso Algo')
+
+alert('Hola desde el hijo!')
 </script>
 
+
 <template>
-  <HelloWorld />
+  <hijo nombre="Juan" @enviarNombre="onEnviarNombre" />
 </template>

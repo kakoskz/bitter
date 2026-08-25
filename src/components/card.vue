@@ -3,8 +3,8 @@
 
 
     export default {
-        name: 'card',
-        components: { card },
+        name: 'button',
+        components: { button },
 
         data(){
             return { mensaje: '' }
@@ -18,7 +18,7 @@
 
 <template>
     <div>
-        <BotonSaludo @saludo="mostrarSaludo" />
+        <button @saludo="mostrarSaludo" />
         <p v-if = "mensaje">{{ mensaje }}</p>
     </div>
 </template>

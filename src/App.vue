@@ -11,4 +11,5 @@ console.log('EL Hijo Me Aviso Algo')
 
 
 <template>
+    <Card/>
 </template>

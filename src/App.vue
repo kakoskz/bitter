@@ -1,12 +1,14 @@
-<script setup>
-import hijo from './components/hijo.vue'
+<script>
+import Card from './components/card.vue';
 
+export default {
+
+  name: 'app',
+  components: { Card }
+}
 console.log('EL Hijo Me Aviso Algo')
-
-alert('Hola desde el hijo!')
 </script>
 
 
 <template>
-  <hijo nombre="Juan" @enviarNombre="onEnviarNombre" />
 </template>

@@ -1,24 +1,24 @@
 <script>
-    import button from './button.vue';
+import BotonSaludo from './button.vue';
 
+export default {
+  name: 'card',
+  components: { BotonSaludo },
 
-    export default {
-        name: 'button',
-        components: { button },
-
-        data(){
-            return { mensaje: '' }
-        },methods: {
-            mostrarSaludo() {
-                this.mensaje = 'Hola desde el hijo '
-            }
-        }
+  data() {
+    return { mensaje: '' }
+  },
+  methods: {
+    mostrarSaludo() {
+      this.mensaje = 'Hola desde el hijo'
     }
+  }
+}
 </script>
 
 <template>
-    <div>
-        <button @saludo="mostrarSaludo" />
-        <p v-if = "mensaje">{{ mensaje }}</p>
-    </div>
+  <div>
+    <BotonSaludo @saludo="mostrarSaludo" />
+    <p v-if="mensaje">{{ mensaje }}</p>
+  </div>
 </template>
